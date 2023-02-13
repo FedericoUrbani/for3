@@ -2,11 +2,12 @@ public class Tester {
     public static void main(String[] args) {
         String []arr=new String []{"Monday","Tuesday","Wednesday","Friday","Thursday","Saturday","Sunday"};
 
-        for (int i=0; i<=arr.length; i++){
+        for (int i=0; i<=arr.length;){
 
-            if (i==0||i%2==0){
+
                 arr[i]=arr[i].toUpperCase();
-            }
+                i=i+2;
+
         }
         for (String a: arr){
             System.out.println(a);
